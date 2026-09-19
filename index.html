@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Página principal da ONG</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Página da ONG: Animais em necessidade</h1>
+    <img class="img-index" src="./img/imagem-cao-golden.jpg" alt="Imagem de um cão da raça golden olhando para a câmera" width="400" height="300">
+  </header>
+
+ <nav>
+  <!-- Checkbox oculto que controla o menu -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- Ícone do hambúrguer -->
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <ul class="nav-menu">
+    <li><a href="./mainpags/projetos.html">Projetos</a></li>
+    <li><a href="./mainpags/cadastros.html">Cadastros</a></li>
+    <li class="dropdown">
+      <a href="#">Cuidados com animais</a>
+      <div class="dropdown-menu">
+        <a href="./otherpags/paggeral.html">Animais em geral</a>
+        <a href="./otherpags/pagcaes.html">Cães</a>
+        <a href="./otherpags/paggatos.html">Gatos</a>
+      </div>
+    </li>
+  </ul>
+ </nav>
+
+  <div class="layout">
+    <!-- Barra lateral -->
+    <aside class="aside-bar">
+      <h5>Denúncias de maus-tratos</h5>
+      <p>Disque denúncia pelo número:</p>
+      <p class="destaque-telefone">(21) 2253-1177</p>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section>
+        <h2>Sobre a ONG</h2>
+        <p>
+          Nós somos uma organização dedicada a melhorar a vida dos animais.
+          Nossa missão é promover o bem-estar animal e a proteção dos direitos dos animais.
+        </p>
+        <p>
+          Você pode contribuir de várias formas: se voluntariando,
+          fazendo doações ou ajudando a divulgar nossa causa.
+        </p>
+      </section>
+
+      <section>
+        <h3>Entre em contato</h3>
+        <p><strong>E-mail:</strong> contato@ong.org</p>
+        <p><strong>Telefone:</strong> (21) 1234-5678</p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Rio de Janeiro/RJ</p>
+      </section>
+
+      <section>
+        <h4>Notícias</h4>
+        <p>
+          Fique por dentro das últimas notícias sobre o mundo animal e as ações da nossa ONG.
+          Acompanhe nossas redes sociais para mais informações.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>Ajude os animais, eles precisam de você!</p>
+  </footer>
+
+</body>
+</html>

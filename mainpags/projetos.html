@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Projetos da ONG</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Projetos da ONG</h1>
+    <img 
+      id="img-header-projetos" 
+      src="../img/imagem-animais-em-abrigo.jpg" 
+      alt="Cães em um abrigo de ONG"
+      width="500" 
+      height="300">
+  </header>
+
+  <nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-menu">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="../mainpags/projetos.html" class="active">Projetos</a></li>
+      <li><a href="../mainpags/cadastros.html">Cadastro</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container Global de Toasts (Notificação acionada via :target) -->
+  <div id="toast-container" class="toast-container">
+    <div id="toast-pix" class="toast-target">
+      <div class="toast-content">
+        <span>Chave PIX copiada com sucesso!</span>
+        <a href="#" class="toast-close">&times;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="aside-bar">
+      <h5>Denúncias de maus-tratos</h5>
+      <p>Disque denúncia pelo número:</p>
+      <p class="destaque-telefone">(21) 2253-1177</p>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section>
+        <h2>Como se voluntariar</h2>
+        <p>
+          Junte-se à nossa causa! Não há nada mais gratificante do que dedicar tempo e energia  
+          para fazer a diferença na vida dos animais.
+        </p>
+
+        <h3>Áreas de atuação</h3>
+        <ul class="lista-areas">
+          <li>Resgate de animais <span class="badge badge-danger">Urgente</span></li>
+          <li>Abrigo e cuidados diários <span class="badge badge-success">Aberto</span></li>
+          <li>Transporte de animais <span class="badge badge-warning">Vagas Limitadas</span></li>
+          <li>Divulgação e compartilhamento <span class="badge badge-info">Remoto</span></li>
+        </ul>
+      </section>
+
+      <section id="doacao">
+        <h2>Campanha de Doação</h2>
+        <p>
+          A sua contribuição é fundamental para o nosso trabalho.  
+          Juntos, podemos fazer a diferença na vida dos animais necessitados.
+        </p>
+
+        <div class="cards-doacao">
+          <article class="card-doacao">
+            <div class="card-header-flex">
+              <h3>Doação via PIX</h3>
+              <span class="badge badge-success">Incentivado</span>
+            </div>
+            <p>Utilize o código PIX abaixo para fazer a sua doação:</p>
+            <p class="codigo-pix"><strong>Código PIX:</strong> 123.456.789-00</p>
+            <!-- Link apontando para a âncora do Toast -->
+            <a href="#toast-pix" class="btn btn-secondary btn-sm" id="btn-copiar-pix">Copiar Chave PIX</a>
+          </article>
+
+          <article class="card-doacao">
+            <div class="card-header-flex">
+              <h3>Doação de mantimentos</h3>
+              <span class="badge badge-warning">Prioridade Alta</span>
+            </div>
+            <p>
+              Estamos aceitando doações de ração, medicamentos e materiais de limpeza.  
+              Entre em contato conosco para saber como contribuir.
+            </p>
+            <p><strong>Telefone:</strong> (21) 1234-5678</p>
+            <!-- Link apontando para a âncora do Modal -->
+            <a href="#modal-pontos" class="btn btn-primary btn-sm">Ver Pontos de Coleta</a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Componente Modal Semântico (Sem a classe .hidden para permitir exibição via :target) -->
+  <div id="modal-pontos" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Pontos de Coleta de Mantimentos</h3>
+        <a href="#" class="modal-close">&times;</a>
+      </div>
+      <div class="modal-body">
+        <p>Você pode entregar mantimentos diretamente nos seguintes endereços:</p>
+        <ul>
+          <li><strong>Sede Principal:</strong> Rua dos Animais, 123 - Centro</li>
+          <li><strong>Clínica Vet Parceira:</strong> Av. das Aves, 456 - Copacabana</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-secondary">Fechar</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
